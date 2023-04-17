@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ferinco's calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calculator-header">
+        <p>FERINCO'S CALCULATOR</p>
+      </div>
+      <form>
+        <input type="text" class="subscreen" id="subscreen" />
+        <input type="text" class="screen" id="screen" />
+      </form>
+      <div class="buttons-body">
+        <div class="buttons number-1">
+          <button class="special buttons_row3" id="switch" data-spc="switch">
+            ↑
+          </button>
+          <button
+            class="special buttons_row3"
+            id="anti-switch"
+            data-spc="antiswitch"
+          >
+            ↓
+          </button>
+          <button class="btn operations buttons_row3">e</button>
+
+          <button
+            class="special buttons_row3"
+            id="button-cancel"
+            data-spc="cancel"
+          >
+            CE
+          </button>
+          <button
+            class="special buttons_row3"
+            id="button-clear"
+            data-spc="clear"
+          >
+            C
+          </button>
+          <button class="special">re</button>
+        </div>
+        <div class="buttons 2">
+          <button class="buttons_row5" id="factorial">n!</button>
+          <button id="square">x2</button>
+          <button id="cube">x3</button>
+          <button id="inverse">y-1</button>
+          <button id="percent">%</button>
+        </div>
+        <div class="3 buttons">
+          <div class="normal buttons 3" id="normal">
+            <button class="operations buttons_row1" id="sin" data-ops="sin">
+              sin
+            </button>
+            <button class="operations buttons_row1" id="cos" data-ops="cos">
+              cos
+            </button>
+            <button class="operations buttons_row1" id="tan" data-ops="tan">
+              tan
+            </button>
+            <button class="operations buttons_row2" data-ops="log" id="log">log</button>
+          </div>
+          <div id="arc" class="buttons 4">
+            <button
+              class="operations buttons_row1"
+              id="arcsin"
+              data-ops="arcsin"
+            >
+              arcsin
+            </button>
+            <button
+              class="operations buttons_row1"
+              id="arccos"
+              data-ops="arccos"
+            >
+              arccos
+            </button>
+            <button
+              class="operations buttons_row1"
+              id="arctan"
+              data-ops="arctan"
+            >
+              arctan
+            </button>
+            <button>in</button>
+          </div>
+        </div>
+        <button class="special buttons_row2" data-spc="√" id="sqrt">√</button>
+
+        <div class="buttons 5">
+          <button class="btn buttons_row4" data-num="7" id="num">7</button>
+          <button class="btn buttons_row4" data-num="8" id="num">8</button>
+          <button class="btn buttons_row4" data-num="9" id="num">9</button>
+          <button class="btn sign buttons_row1" data-num="*">*</button>
+          <button class="btn sign buttons_row1" data-num="/" id="divide">/</button>
+        </div>
+        <div class="buttons 6">
+          <button class="btn buttons_row5" data-num="4" id="num">4</button>
+          <button class="btn buttons_row5" data-num="5" id="num">5</button>
+          <button class="btn buttons_row5" data-num="6" id="num">6</button>
+          <button class="btn sign buttons_row5" data-num="-">-</button>
+          <button class="btn special buttons_row4" data-num="pi" id="pi">
+            π
+          </button>
+        </div>
+        <div class="buttons 7">
+          <button class="btn buttons_row6" data-num="1" id="num">1</button>
+          <button class="btn buttons_row6" data-num="2" id="num">2</button>
+          <button class="btn buttons_row6" data-num="3" id="num">3</button>
+          <button class="btn sign buttons_row6" data-num="+">+</button>
+          <button class="btn special buttons_row6" data-num="?">?</button>
+        </div>
+
+        <div class="buttons 8">
+          <button class="btn buttons_row7" data-num="(">(</button>
+          <button class="btn buttons_row7" data-num="0" id="num">0</button>
+          <button class="btn buttons_row7" data-num=")">)</button>
+          <button class="btn sign buttons_row7" data-num=".">.</button>
+          <button class="buttons_row7" id="equals">=</button>
+        </div>
+
+        <!-- <button class="btn buttons_row2">Exp</button>
+        <button class="btn buttons_row2">Mod</button> -->
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
